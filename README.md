@@ -1,76 +1,59 @@
-<h1 align="left">🧠 Basics of OOP Blog App</h1>
-<h3 align="left">TypeScript • Express • OOP Architecture • Clean Backend Structure</h3>
+<h1 align="left">🧩 BasicsOfOOP Blog App</h1>
+<p align="left">
+  <b>OOP + TypeScript + Express</b> — A clean, modular blog backend built to demonstrate Object-Oriented Programming in a real Express project.
+</p>
 
 <p align="left">
   <a href="https://github.com/himasaif/BasicsOfOOP_blog_app">
-    <img src="https://img.shields.io/badge/Repo-BasicsOfOOP__blog__app-111?style=flat&logo=github&logoColor=white" />
+    <img src="https://img.shields.io/badge/Repo-GitHub-111?style=flat&logo=github&logoColor=white" />
   </a>
-  <a href="https://github.com/himasaif?tab=repositories">
-    <img src="https://img.shields.io/badge/All%20Repos-View-2ea44f?style=flat&logo=github&logoColor=white" />
-  </a>
-  <a href="https://www.linkedin.com/in/ibraheem-saif-981458274">
-    <img src="https://img.shields.io/badge/LinkedIn-Ibrahim%20Seif-0A66C2?style=flat&logo=linkedin&logoColor=white" />
-  </a>
-</p>
-
----
-
-## 🎯 Why this project?
-This project is built to demonstrate **Object-Oriented Programming (OOP)** in a real backend application using:
-
-- ✅ **TypeScript** (typing, interfaces, safer code)
-- ✅ **Express.js** (REST APIs)
-- ✅ **OOP Design** (Services, Controllers, Models, Repositories)
-- ✅ **Clean Structure** (Separation of concerns & maintainable code)
-
-> هدف البروجكت: أوضح إني اشتغلت **OOP مع Express باستخدام TypeScript** بشكل عملي ومنظم.
-
----
-
-## 🧱 OOP Architecture
-**Core idea:** each layer has a clear responsibility:
-
-- **Controllers** → handle HTTP requests & responses  
-- **Services** → business logic (OOP classes)  
-- **Models/Entities** → data representation  
-- **Repositories/DB Layer** → database operations  
-- **Middlewares** → validation, auth, error handling  
-
-Example:
-- `AuthController` calls `AuthService`
-- `AuthService` uses `UserRepository`
-- Clean flow, easy to test & extend ✅
-
----
-
-## ⚙️ Tech Stack
-<p align="left">
   <img src="https://img.shields.io/badge/TypeScript-111?style=flat&logo=typescript&logoColor=white" />
-  <img src="https://img.shields.io/badge/Node.js-111?style=flat&logo=node.js&logoColor=white" />
   <img src="https://img.shields.io/badge/Express-111?style=flat&logo=express&logoColor=white" />
   <img src="https://img.shields.io/badge/OOP-111?style=flat&logo=codefactor&logoColor=white" />
+  <img src="https://img.shields.io/badge/MongoDB-111?style=flat&logo=mongodb&logoColor=white" />
 </p>
 
 ---
 
-## ✨ Features
-- ✅ Clean REST API structure
-- ✅ OOP-based services & controllers
-- ✅ Validation & error handling
-- ✅ Scalable folder structure
-- ✅ Easy to extend with new modules (Posts, Users, Comments...)
+## ✨ Why this project?
+This repository is built specifically to showcase:
+- ✅ **Object-Oriented Programming** in a real backend codebase  
+- ✅ **TypeScript** for strong typing and better maintainability  
+- ✅ **Express** with clean architecture and reusable layers  
+- ✅ **Middleware-based flow** (auth, validation, error handling)  
+- ✅ **Modular structure** (modules, utils, DB layer)
 
 ---
 
-## 📁 Project Structure
+## 🔥 Key Highlights
+- **OOP approach** (services/utilities organized as reusable components)
+- **Typed models & requests** (interfaces like `IUser`, `IBlog`, `IRequestWithUser`)
+- **Central error handling** (`error.handler.ts`)
+- **Auth middleware** (`auth.middlewares.ts`)
+- **Validation middleware** (`validation.middleware.ts`)
+- **Token utilities** (`token.utils.ts`)
+- **Controller handler wrapper** (`controller.handler.ts`)
+- **Database layer** (`DB/connectionDb.ts`, `DB/database.services.ts`)
+
+---
+
+## 🧱 Project Structure (High-level)
 ```bash
 src/
+  DB/
+    models/
+    connectionDb.ts
+    database.services.ts
+  middlewares/
+    auth.middlewares.ts
+    validation.middleware.ts
+    error.handler.ts
   modules/
     auth/
-      auth.controller.ts
-      auth.service.ts
-      auth.routes.ts
-  middlewares/
+    blog/
+  types/
+    types.ts
   utils/
-  config/
+    token.utils.ts
+    controller.handler.ts
   index.ts
